@@ -16,5 +16,11 @@
     "title": "AI 工作流整合",
     "en": "Workflow Hub",
     "url": "https://ai-workflow-demo.neillin-lct.workers.dev/"
+  },
+  {
+    "id": "04",
+    "title": "AI 第二大腦",
+    "en": "AI Second Brain",
+    "url": "https://lnprj04.neillin-lct.workers.dev/"
   }
 ]
