@@ -3,5 +3,7 @@
   {"id":"02","title":"趕魚","en":"Pond · Fish · Simulation","url":"https://ganyu.neillin-lct.workers.dev/"},
   {"id":"03","title":"AI 工作流整合","en":"Workflow Hub","url":"https://ai-workflow-demo.neillin-lct.workers.dev/"},
   {"id":"04","title":"AI 第二大腦","en":"AI Second Brain","url":"https://lnprj04.neillin-lct.workers.dev/"},
-  {"id":"05","title":"星空互動","en":"Starfield Interaction","url":"https://lnprj05.neillin-lct.workers.dev/"}
+  {"id":"05","title":"星空互動","en":"Starfield Interaction","url":"https://lnprj05.neillin-lct.workers.dev/"},
+  {"id":"06","title":"台股財報分析","en":"Financial Report Analyzer","url":"https://stock-analyzer.neillin-lct.workers.dev/"},
+  {"id":"07","title":"半導體供應鏈圖","en":"Semiconductor Supply Chain","url":"https://supply-chain.neillin-lct.workers.dev/"}
 ]
