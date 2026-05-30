@@ -1,10 +1,19 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+<!-- saved from url=(0041)file:///Users/nqya/Downloads/index_4.html -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LNPRJ</title>
+<link href="./LNPRJ_files/css2" rel="stylesheet">
+=======
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LNPRJ</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Serif+SC:wght@300;400&display=swap" rel="stylesheet">
+>>>>>>> origin/main
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -54,7 +63,11 @@ body {
   letter-spacing: .14em;
 }
 
+<<<<<<< HEAD
+/* ── Main: ghost + project list ── */
+=======
 /* ── Main ── */
+>>>>>>> origin/main
 .main {
   flex: 1;
   min-height: 0;
@@ -92,8 +105,11 @@ body {
   padding-bottom: 1rem;
   margin-bottom: 0;
   border-bottom: .5px solid var(--line);
+<<<<<<< HEAD
+=======
   animation: fadeUp .5s ease both;
   animation-delay: .1s;
+>>>>>>> origin/main
 }
 .list-label {
   font-size: 9px;
@@ -113,8 +129,12 @@ body {
   border-left: 1px solid transparent;
   border-bottom: .5px solid var(--line);
   transition: border-left-color .22s, background .22s;
+<<<<<<< HEAD
+  position: relative;
+=======
   opacity: 0; /* hidden before animation */
   animation: fadeUp .5s ease both;
+>>>>>>> origin/main
 }
 .project:hover {
   border-left-color: rgba(229,225,216,.3);
@@ -155,10 +175,25 @@ body {
 }
 .project:hover .proj-arrow { opacity: 1; transform: translateX(0); }
 
+<<<<<<< HEAD
+/* Load animation */
+=======
+>>>>>>> origin/main
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+<<<<<<< HEAD
+.list-meta    { animation: fadeUp .5s ease both; animation-delay: .1s; }
+.project:nth-child(2) { animation: fadeUp .5s ease both; animation-delay: .22s; }
+.project:nth-child(3) { animation: fadeUp .5s ease both; animation-delay: .36s; }
+.project:nth-child(4) { animation: fadeUp .5s ease both; animation-delay: .5s; }
+.project:nth-child(5) { animation: fadeUp .5s ease both; animation-delay: .64s; }
+.project:nth-child(6) { animation: fadeUp .5s ease both; animation-delay: .78s; }
+.project:nth-child(7) { animation: fadeUp .5s ease both; animation-delay: .92s; }
+.project:nth-child(8) { animation: fadeUp .5s ease both; animation-delay: 1.06s; }
+=======
+>>>>>>> origin/main
 
 /* ── Footer ── */
 footer {
@@ -191,12 +226,22 @@ footer span {
 
 <main class="main">
   <div class="ghost">索引</div>
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/main
   <div class="project-list">
     <div class="list-meta">
       <span class="list-label">作品 / Works</span>
       <span class="list-label">— neillin lct</span>
     </div>
+<<<<<<< HEAD
+
+    <!-- 專案列表由 lnprj-nav.js 動態生成 -->
+
+=======
     <!-- 作品由 projects.json 動態載入，無需手動修改此處 -->
+>>>>>>> origin/main
   </div>
 </main>
 
@@ -205,6 +250,32 @@ footer span {
   <span>—</span>
 </footer>
 
+<<<<<<< HEAD
+
+
+<script src="https://lnprj.neillin-lct.workers.dev/lnprj-nav.js"></script>
+<script>
+(function () {
+  var list = document.querySelector('.project-list');
+  LNPRJ.PROJECTS.forEach(function (p, i) {
+    var a = document.createElement('a');
+    a.className = 'project';
+    a.href = '../' + p.href;
+    a.style.animationDelay = (0.22 + i * 0.14) + 's';
+    a.innerHTML =
+      '<span class="proj-num">0' + p.id + '</span>' +
+      '<span class="proj-zh">' + p.zh + '</span>' +
+      '<span class="proj-meta">' +
+        '<span class="proj-en">' + p.en + '</span>' +
+        '<span class="proj-arrow">→</span>' +
+      '</span>';
+    list.appendChild(a);
+  });
+  LNPRJ.init({ current: 0, basePath: '../', hideButton: true });
+})();
+</script>
+</body></html>
+=======
 <script>
 fetch('/projects.json')
   .then(r => r.json())
@@ -239,3 +310,4 @@ fetch('/projects.json')
 
 </body>
 </html>
+>>>>>>> origin/main
