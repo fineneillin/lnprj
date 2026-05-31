@@ -221,7 +221,7 @@ footer span {
   LNPRJ.PROJECTS.forEach(function (p, i) {
     var a = document.createElement('a');
     a.className = 'project';
-    a.href = '../' + p.href;
+    a.href = /^https?:\/\//.test(p.href) ? p.href : '../' + p.href;
     a.style.animationDelay = (0.22 + i * 0.14) + 's';
     a.innerHTML =
       '<span class="proj-num">0' + p.id + '</span>' +

@@ -4,13 +4,13 @@
  */
 (function () {
   const PROJECTS = [
-    { id: 1, zh: '日語文法解析', en: 'Japanese Grammar Analyzer', href: 'jpgrammer/index.html' },
-    { id: 2, zh: '趕魚',         en: 'Pond · Fish · Simulation',  href: 'ganyu/index.html' },
-    { id: 3, zh: '工作流整合',   en: 'AI Workflow Hub',            href: 'infographic/index.html' },
-    { id: 4, zh: 'AI 第二大腦',  en: 'AI Second Brain',            href: '2ndbrian/lnprj04-preview.html' },
-    { id: 5, zh: '星空互動',     en: 'Starfield Interaction',      href: 'lnprj05/index.html' },
-    { id: 6, zh: '台股財報分析', en: 'Stock Report Analyzer',      href: 'lnprj06/public/index.html' },
-    { id: 7, zh: '半導體供應鏈圖', en: 'Semiconductor Supply Chain', href: 'lnprj07/public/index.html' },
+    { id: 1, zh: '日語文法解析',   en: 'Japanese Grammar Analyzer',  href: 'https://japanese-grammar.neillin-lct.workers.dev/' },
+    { id: 2, zh: '趕魚',           en: 'Pond · Fish · Simulation',   href: 'https://ganyu.neillin-lct.workers.dev/' },
+    { id: 3, zh: '工作流整合',     en: 'AI Workflow Hub',             href: 'https://ai-workflow-demo.neillin-lct.workers.dev/' },
+    { id: 4, zh: 'AI 第二大腦',    en: 'AI Second Brain',             href: 'https://lnprj04.neillin-lct.workers.dev/' },
+    { id: 5, zh: '星空互動',       en: 'Starfield Interaction',       href: 'https://lnprj05.neillin-lct.workers.dev/' },
+    { id: 6, zh: '台股財報分析',   en: 'Stock Report Analyzer',       href: 'https://lnprj06.neillin-lct.workers.dev/' },
+    { id: 7, zh: '半導體供應鏈圖', en: 'Semiconductor Supply Chain',  href: 'https://lnprj07.neillin-lct.workers.dev/' },
   ];
 
   function injectStyles() {
@@ -181,7 +181,7 @@
     PROJECTS.forEach(p => {
       const a = document.createElement('a');
       a.className = 'lnprj-item' + (p.id === current ? ' lnprj-current' : '');
-      a.href = basePath + p.href;
+      a.href = /^https?:\/\//.test(p.href) ? p.href : basePath + p.href;
 
       const num = document.createElement('span');
       num.className = 'lnprj-num';
