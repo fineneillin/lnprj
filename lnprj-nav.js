@@ -11,6 +11,7 @@
     { id: 5, zh: '星空互動',       en: 'Starfield Interaction',       href: 'https://lnprj05.neillin-lct.workers.dev/' },
     { id: 6, zh: '台股財報分析',   en: 'Stock Report Analyzer',       href: 'https://lnprj06.neillin-lct.workers.dev/' },
     { id: 7, zh: '半導體供應鏈圖', en: 'Semiconductor Supply Chain',  href: 'https://lnprj07.neillin-lct.workers.dev/' },
+    { id: 8, zh: '墨流し',         en: 'Sumi Nagashi',               href: 'https://lnprj08-sumi.neillin-lct.workers.dev/' },
   ];
 
   function injectStyles() {
